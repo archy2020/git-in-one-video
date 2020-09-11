@@ -1,0 +1,383 @@
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video
+$ code .
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video
+$ git init
+Initialized empty Git repository in C:/Users/NEHA/Desktop/git in one video/.git/
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ls -lart
+total 12
+drwxr-xr-x 1 NEHA 197121 0 Sep 11 02:03 ../
+drwxr-xr-x 1 NEHA 197121 0 Sep 11 02:05 ./
+drwxr-xr-x 1 NEHA 197121 0 Sep 11 02:05 .git/
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ls
+phone.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        phone.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git add phone.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git commit -m "create phone"
+[master (root-commit) c3c6fc8] create phone
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 phone.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git diff
+diff --git a/phone.txt b/phone.txt
+index e69de29..76b718d 100644
+--- a/phone.txt
++++ b/phone.txt
+@@ -0,0 +1,4 @@
++ phone
++
++ touchscreen
++ scratchless-gorilla glass
+\ No newline at end of file
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git add .
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git commit -m "commit 2"
+[master 8193b19] commit 2
+ 1 file changed, 4 insertions(+)
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git log
+commit 8193b1900332d4be376f528c3fd1544888ba6e07 (HEAD -> master)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:35:06 2020 -0700
+
+    commit 2
+
+commit c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:30:08 2020 -0700
+
+    create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git checkout^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git checkout c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Note: switching to 'c3c6fc821c47c60381b9db360cc30a918ade3c3f'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at c3c6fc8 create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((c3c6fc8...))
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((c3c6fc8...))
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((c3c6fc8...))
+$ git chechout  8193b1900332d4be376f528c3fd1544888ba6e07
+git: 'chechout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((c3c6fc8...))
+$ git checkout  8193b1900332d4be376f528c3fd1544888ba6e07
+Previous HEAD position was c3c6fc8 create phone
+HEAD is now at 8193b19 commit 2
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((8193b19...))
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((8193b19...))
+$ git branch
+* (HEAD detached at 8193b19)
+  master
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video ((8193b19...))
+$ git checkout master
+Switched to branch 'master'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git branch
+* master
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git checkout -b internet
+Switched to a new branch 'internet'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (internet)
+$ git add .
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (internet)
+$ git commit -m "add internet"
+[internet cfd09e6] add internet
+ 1 file changed, 1 insertion(+)
+ create mode 100644 internet.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (internet)
+$ git branch
+* internet
+  master
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (internet)
+$ git checkout master
+Switched to branch 'master'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git checkout -b music_pl
+Switched to a new branch 'music_pl'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git add .
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git commit -m "music player added"
+[music_pl 7ce6384] music player added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 music_pl.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git branch
+  internet
+  master
+* music_pl
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git checkout master
+Switched to branch 'master'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ ^C
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git merge internet
+Updating 8193b19..cfd09e6
+Fast-forward
+ internet.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 internet.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git log
+commit cfd09e64bbdf53afda88d552e9f1384e6d3ee46c (HEAD -> master, internet)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:22:52 2020 -0700
+
+    add internet
+
+commit 8193b1900332d4be376f528c3fd1544888ba6e07
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:35:06 2020 -0700
+
+    commit 2
+
+commit c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:30:08 2020 -0700
+
+    create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git log
+commit cfd09e64bbdf53afda88d552e9f1384e6d3ee46c (HEAD -> master, internet)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:22:52 2020 -0700
+
+    add internet
+
+commit 8193b1900332d4be376f528c3fd1544888ba6e07
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:35:06 2020 -0700
+
+    commit 2
+
+commit c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:30:08 2020 -0700
+
+    create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git checkout  music_pl
+Switched to branch 'music_pl'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git add .
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git commit -m "music added"
+On branch music_pl
+nothing to commit, working tree clean
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git checkout master
+Switched to branch 'master'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git branch
+  internet
+* master
+  music_pl
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git log
+commit cfd09e64bbdf53afda88d552e9f1384e6d3ee46c (HEAD -> master, internet)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:22:52 2020 -0700
+
+    add internet
+
+commit 8193b1900332d4be376f528c3fd1544888ba6e07
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:35:06 2020 -0700
+
+    commit 2
+
+commit c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:30:08 2020 -0700
+
+    create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git checkout music_pl
+Switched to branch 'music_pl'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git log
+commit 7ce63848d52d40b9abff23bed6bc896dc759d373 (HEAD -> music_pl)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:34:09 2020 -0700
+
+    music player added
+
+commit 8193b1900332d4be376f528c3fd1544888ba6e07
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:35:06 2020 -0700
+
+    commit 2
+
+commit c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:30:08 2020 -0700
+
+    create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (music_pl)
+$ git checkout master
+Switched to branch 'master'
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git merge music_pl
+Merge made by the 'recursive' strategy.
+ music_pl.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 music_pl.txt
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git log
+commit 26fca511c13e08766fda1e312a9493a08e1234be (HEAD -> master)
+Merge: cfd09e6 7ce6384
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:54:37 2020 -0700
+
+    Merge branch 'music_pl' into master
+
+commit 7ce63848d52d40b9abff23bed6bc896dc759d373 (music_pl)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:34:09 2020 -0700
+
+    music player added
+
+commit cfd09e64bbdf53afda88d552e9f1384e6d3ee46c (internet)
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 09:22:52 2020 -0700
+
+    add internet
+
+commit 8193b1900332d4be376f528c3fd1544888ba6e07
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:35:06 2020 -0700
+
+    commit 2
+
+commit c3c6fc821c47c60381b9db360cc30a918ade3c3f
+Author: Archana <archysimats@gmail.com>
+Date:   Fri Sep 11 07:30:08 2020 -0700
+
+    create phone
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git merge internet
+Already up to date.
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git branch -d internet
+Deleted branch internet (was cfd09e6).
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git branch -d music_pl
+Deleted branch music_pl (was 7ce6384).
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$ git branch
+* master
+
+NEHA@DESKTOP-UPAKTR5 MINGW64 ~/Desktop/git in one video (master)
+$
